@@ -48,13 +48,13 @@ class Home extends StatelessWidget {
                       color: Colors.red,
                       padding: EdgeInsets.all(5),
                       margin: EdgeInsets.all(5),
-                      height: 1000,
+                      height: 300,
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: <Widget>[
                           Container(
-                              color: Colors.indigo,
+                              color: Colors.green,
                               padding: EdgeInsets.all(10),
                               margin: EdgeInsets.all(10),
                               child: Text("Hello World")),
@@ -75,6 +75,36 @@ class Home extends StatelessWidget {
                           )
                         ],
                       )),
+                  Container(
+                      padding: EdgeInsets.all(5),
+                      margin: EdgeInsets.all(5),
+                      color: Colors.red,
+                      child: Row(
+                        children: <Widget>[
+                          // Image.asset("./assets/home.jpg"),
+                          Expanded(
+                              flex: 6,
+                              child: Container(
+                                padding: EdgeInsets.all(30),
+                                color: Colors.cyan,
+                                child: Text("1"),
+                              )),
+                          Expanded(
+                              flex: 2,
+                              child: Container(
+                                padding: EdgeInsets.all(30),
+                                color: Colors.pink,
+                                child: Text("2"),
+                              )),
+                          Expanded(
+                              flex: 2,
+                              child: Container(
+                                padding: EdgeInsets.all(30),
+                                color: Colors.purpleAccent,
+                                child: Text("3"),
+                              )),
+                        ],
+                      ))
                 ],
               ))),
 
